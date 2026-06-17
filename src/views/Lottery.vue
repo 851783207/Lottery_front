@@ -44,7 +44,10 @@ import { useRoute } from 'vue-router'
 import axios from 'axios'
 import NavigationBar from '@/components/NavigationBar.vue'
 
-const API_BASE_URL = '/api/lottery'
+// 根据环境选择 API 地址
+const API_BASE_URL = import.meta.env.DEV 
+  ? '/api/lottery'  // 开发环境使用代理
+  : 'https://springboot1-271501-5-1443639331.sh.run.tcloudbase.com/lottery'  // 生产环境使用完整地址
 
 interface Card {
   id: number
