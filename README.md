@@ -41,3 +41,4 @@ npm run dev
 npm run build
 ```
 # Lottery_front
+# Lottery_front
