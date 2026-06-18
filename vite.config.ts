@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// ... existing code ...
 export default defineConfig({
   plugins: [
     vue(),
@@ -22,6 +21,20 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
+    },
+    headers: {
+      'Content-Type': 'application/javascript; charset=utf-8'
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
+      }
+    },
+    minify: 'terser',
+    sourcemap: false
   }
 })
