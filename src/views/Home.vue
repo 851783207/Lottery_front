@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="title">🎁 幸运翻牌 🎁</div>
+    <div class="title">🎁 端午翻牌 🎁</div>
     <div class="subtitle">请输入您的姓名开始游戏</div>
     
     <div class="input-section">
