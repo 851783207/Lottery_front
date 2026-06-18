@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <NavigationBar title="幸运翻牌" :back="true" />
+    <NavigationBar title="中奖概率倍儿高" :back="true" />
     
     <div class="content">
       <div class="header">
-        <div class="user-id">玩家：{{ userId }}</div>
-        <div class="tip" v-if="!flipped">点击卡片翻开您的幸运奖品</div>
+        <div class="user-id">名称：{{ userId }}</div>
+        <div class="tip" v-if="!flipped">点击卡片翻开，100%中奖</div>
       </div>
 
       <div class="grid-container">

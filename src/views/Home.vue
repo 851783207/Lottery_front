@@ -19,9 +19,10 @@
     
     <div class="rules">
       <div class="rules-title">游戏规则：</div>
-      <div class="rules-item">1. 每人只能翻一次牌</div>
-      <div class="rules-item">2. 翻牌后将获得对应奖品</div>
-      <div class="rules-item">3. 祝您好运！</div>
+      <div class="rules-item">1. 中奖概率倍儿高</div>
+      <div class="rules-item">2. 奖品也嘛倍儿好</div>
+      <div class="rules-item">3. 手机钞票奔驰金条还有大金劳儿</div>
+      <div class="rules-item">4. 一人一次，按照名称发奖</div>
     </div>
   </div>
 </template>
@@ -35,12 +36,12 @@ const userId = ref('')
 
 const startGame = () => {
   if (!userId.value.trim()) {
-    alert('请输入姓名')
+    alert('请输入游戏id')
     return
   }
 
-  if (userId.value.trim().length < 2) {
-    alert('姓名至少2个字符')
+  if (userId.value.trim().length < 1) {
+    alert('咱部队有单自id吗？')
     return
   }
 
