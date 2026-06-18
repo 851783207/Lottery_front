@@ -14,7 +14,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true,
+    open: 'http://localhost:3000',
     proxy: {
       '/api': {
         target: 'https://springboot1-271501-5-1443639331.sh.run.tcloudbase.com',
@@ -31,7 +31,7 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[hash].[ext]'
       }
     },
-    minify: 'terser',
+    minify: 'esbuild',
     sourcemap: false
   }
 })
