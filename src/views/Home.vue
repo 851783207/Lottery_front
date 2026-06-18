@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="title">🎁端午翻牌🎁</div>
-    <div class="subtitle">输入狒狒游戏名称</div>
+    <div class="subtitle">输入能的ff14游戏id</div>
     
     <div class="input-section">
       <input 
         class="id-input" 
         type="text" 
-        placeholder="输入游戏名称" 
+        placeholder="输入游戏id" 
         v-model="userId"
         maxlength="20"
       />
