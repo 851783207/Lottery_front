@@ -40,8 +40,8 @@ const startGame = () => {
     return
   }
 
-  if (userId.value.trim().length < 1) {
-    alert('咱部队有单自id吗？')
+  if (userId.value.trim().length < 2) {
+    alert('咱部队有单字id吗？')
     return
   }
 
