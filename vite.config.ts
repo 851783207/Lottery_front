@@ -21,9 +21,6 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
-    },
-    headers: {
-      'Content-Type': 'application/javascript; charset=utf-8'
     }
   },
   build: {
