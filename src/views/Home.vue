@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title">🎁端午翻牌🎁</div>
-    <div class="subtitle">输入能的ff14游戏id</div>
+    <div class="subtitle">输入你的ff14游戏id</div>
     
     <div class="input-section">
       <input 
